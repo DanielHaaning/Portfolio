@@ -1,0 +1,155 @@
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1.1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;   
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content:''; content:none;
+
+}
+
+
+/*  END RESET */
+
+#pagewrap {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "intro intro intro intro"
+        "power power power power"
+        "problem problem problem problem"
+        "fremgang fremgang fremgang fremgang"
+        "e e e e"
+        "footer footer footer footer";
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #deb546;
+    color: #000;
+}
+
+header {
+    grid-area: header;
+    background-color: #487766;
+    text-align: center;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+#intro {
+    grid-area: intro;
+    background-color: #487766;
+    padding: 1em;
+    margin-left: 1em; margin-right: 1em; margin-bottom: 1em;
+    text-align: center;
+    color: white;
+    line-height: 200%;
+}
+
+#power {
+    grid-area: power;
+    background-color: #deb546;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+#problem {
+    grid-area: problem;
+    background-color: white;
+    padding: 0.2em;
+    margin-left: 1em; margin-right: 1em; margin-bottom: 1em;
+}
+
+#problemstillinger {
+    width: 100%;
+}
+
+#fremgang {
+    grid-area: fremgang;
+    background-color: white;
+    padding: 0.2em;
+    margin-left: 1em; margin-right: 1em; margin-bottom: 1em;
+    text-align: center;
+    line-height: 180%;
+}
+
+#fremgangsmetode {
+    width: 100%;
+}
+
+#e {
+    grid-area: e;
+    background-color: #487766;
+    padding: 1em;
+    text-align: center;
+    margin-left: 1em; margin-right: 1em; margin-bottom: 1em;
+    color: white;
+    line-height: 180%;
+}
+
+footer {
+    grid-area: footer;
+    font-size: 0.8em;
+    background-color: #ccc;
+    padding: 0.1em;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px){
+    #pagewrap {
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1.5fr 1fr 3fr 1fr 1fr;
+        grid-template-areas: 
+            "header header header header"
+            "a a b b"
+            "c c c c"
+            "d d d d"
+            "e e e e"
+            "footer footer footer footer";
+    }
+    
+    
+}
+
+@media screen and (min-width: 1200px){
+    #pagewrap {
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 4fr 8fr 16fr 8fr 1fr 1fr;
+        grid-template-areas: 
+            "header header header header"
+            "a a b b"
+            "c c c c"
+            "d d e e"
+            "footer footer footer footer";
+    }
+}
+
+
+
