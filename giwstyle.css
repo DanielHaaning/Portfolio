@@ -40,7 +40,10 @@ blockquote:before, blockquote:after, q:before, q:after {
         "power power power power"
         "problem problem problem problem"
         "fremgang fremgang fremgang fremgang"
-        "e e e e"
+        "afslut afslut afslut afslut"
+        "app app app app"
+        "appigen appigen appigen appigen"
+        "protoslut protoslut protoslut protoslut"
         "footer footer footer footer";
 }
 
@@ -54,7 +57,7 @@ header {
     grid-area: header;
     background-color: #487766;
     text-align: center;
-    margin: 1em;
+    margin: 2em;
     padding: 0.5em;
 }
 
@@ -62,50 +65,96 @@ header {
     grid-area: intro;
     background-color: #487766;
     padding: 1em;
-    margin-left: 1em; margin-right: 1em; margin-bottom: 1em;
+    margin-left: 2em; margin-right: 2em; margin-bottom: 2em;
     text-align: center;
     color: white;
     line-height: 200%;
 }
 
-#power {
+#powermobil {
     grid-area: power;
     background-color: #deb546;
     padding: 0.2em;
-    margin-bottom: 0.5em;
+    margin-left: 2em; margin-right: 2em; margin-bottom: 2em;
     text-align: center;
+}
+
+#powertablet {
+    visibility: hidden;
+    display: none;
 }
 
 #problem {
     grid-area: problem;
     background-color: white;
     padding: 0.2em;
-    margin-left: 1em; margin-right: 1em; margin-bottom: 1em;
-}
+    margin-left: 2em; margin-right: 2em; margin-bottom: 2em;}
 
 #problemstillinger {
-    width: 100%;
+    width: 100%; height: 100%;
 }
 
 #fremgang {
     grid-area: fremgang;
     background-color: white;
     padding: 0.2em;
-    margin-left: 1em; margin-right: 1em; margin-bottom: 1em;
+    margin-left: 2em; margin-right: 2em; margin-bottom: 2em;    
     text-align: center;
     line-height: 180%;
 }
 
 #fremgangsmetode {
-    width: 100%;
+    width: 100%; height: 100%;
 }
 
-#e {
-    grid-area: e;
+#afslut {
+    grid-area: afslut;
     background-color: #487766;
     padding: 1em;
     text-align: center;
-    margin-left: 1em; margin-right: 1em; margin-bottom: 1em;
+    margin-left: 2em; margin-right: 2em; margin-bottom: 2em;    
+    color: white;
+    line-height: 180%;
+}
+
+#app {
+    grid-area: app;
+    background-color: white;
+    margin-left: 2em; margin-right: 2em; margin-bottom: 2em;
+}
+
+#aforside {
+    width: 50%; height: 100%;
+    float: left;
+}
+
+#amenu {
+    width: 50%; height: 100%;
+    float: right;
+}
+
+#appigen {
+    grid-area: appigen;
+    background-color: white;
+    margin-left: 2em; margin-right: 2em; margin-bottom: 2em;
+}
+
+#apind {
+    width: 50%; height: 100%;
+    float: left;
+}
+
+#amarked {
+    width: 50%; height: 100%;
+    float: right;
+}
+
+#protoslut {
+    grid-area: protoslut;
+    background-color: #487766;
+    padding: 1em;
+    text-align: center;
+    margin-left: 2em; margin-right: 2em; margin-bottom: 0.5em;    
     color: white;
     line-height: 180%;
 }
@@ -123,17 +172,32 @@ footer {
         display: grid;
         grid-gap: 3px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1.5fr 1fr 3fr 1fr 1fr;
+        grid-template-rows: auto;
         grid-template-areas: 
-            "header header header header"
-            "a a b b"
-            "c c c c"
-            "d d d d"
-            "e e e e"
-            "footer footer footer footer";
+        "header header header header"
+        "intro intro intro intro"
+        "power power power power"
+        "problem problem fremgang fremgang"
+        "afslut afslut afslut afslut"
+        "app app appigen appigen"
+        "protoslut protoslut protoslut protoslut"
+        "footer footer footer footer";
     }
     
-    
+    #powermobil {
+        visibility: hidden;
+        display: none;
+    }
+
+    #powertablet {
+        grid-area: power;
+        visibility: visible;
+        display: block;
+        background-color: #deb546;
+        margin-left: 2em; margin-right: 2em; margin-bottom: 2em; 
+        text-align: center;
+    }
+
 }
 
 @media screen and (min-width: 1200px){
@@ -141,13 +205,18 @@ footer {
         display: grid;
         grid-gap: 3px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 4fr 8fr 16fr 8fr 1fr 1fr;
+        grid-template-rows: auto;
         grid-template-areas: 
-            "header header header header"
-            "a a b b"
-            "c c c c"
-            "d d e e"
-            "footer footer footer footer";
+        "header header header header"
+        "intro intro intro intro"
+        "power power power power"
+        "problem problem problem problem"
+        "fremgang fremgang fremgang fremgang"
+        "afslut afslut afslut afslut"
+        "app app app app"
+        "appigen appigen appigen appigen"
+        "protoslut protoslut protoslut protoslut"
+        "footer footer footer footer";
     }
 }
 
