@@ -48,7 +48,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #deb546;
     color: #000;
 }
@@ -80,6 +80,11 @@ header {
 }
 
 #powertablet {
+    visibility: hidden;
+    display: none;
+}
+
+#powerdesktop {
     visibility: hidden;
     display: none;
 }
@@ -189,6 +194,11 @@ footer {
         display: none;
     }
 
+    #powerdesktop {
+        visibility: hidden;
+        display: none;
+    }
+
     #powertablet {
         grid-area: power;
         visibility: visible;
@@ -209,15 +219,33 @@ footer {
         grid-template-areas: 
         "header header header header"
         "intro intro intro intro"
+        "problem problem fremgang fremgang"
         "power power power power"
-        "problem problem problem problem"
-        "fremgang fremgang fremgang fremgang"
         "afslut afslut afslut afslut"
-        "app app app app"
-        "appigen appigen appigen appigen"
+        "app app appigen appigen"
         "protoslut protoslut protoslut protoslut"
         "footer footer footer footer";
     }
+
+    #powermobil {
+        visibility: hidden;
+        display: none;
+    }
+
+    #powertablet {
+        visibility: hidden;
+        display: none;
+    }
+
+    #powerdesktop {
+        grid-area: power;
+        visibility: visible;
+        display: block;
+        background-color: #deb546;
+        margin-left: 2em; margin-right: 2em; margin-bottom: 2em; 
+        text-align: center;
+    }
+
 }
 
 
