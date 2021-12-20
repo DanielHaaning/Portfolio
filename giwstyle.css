@@ -76,17 +76,10 @@ header {
     background-color: #deb546;
     padding: 0.2em;
     margin-left: 2em; margin-right: 2em; margin-bottom: 2em;
-    text-align: center;
 }
 
-#powertablet {
-    visibility: hidden;
-    display: none;
-}
-
-#powerdesktop {
-    visibility: hidden;
-    display: none;
+#fbillede {
+    width: 100%;
 }
 
 #problem {
@@ -188,25 +181,6 @@ footer {
         "protoslut protoslut protoslut protoslut"
         "footer footer footer footer";
     }
-    
-    #powermobil {
-        visibility: hidden;
-        display: none;
-    }
-
-    #powerdesktop {
-        visibility: hidden;
-        display: none;
-    }
-
-    #powertablet {
-        grid-area: power;
-        visibility: visible;
-        display: block;
-        background-color: #deb546;
-        margin-left: 2em; margin-right: 2em; margin-bottom: 2em; 
-        text-align: center;
-    }
 
 }
 
@@ -225,25 +199,6 @@ footer {
         "app app appigen appigen"
         "protoslut protoslut protoslut protoslut"
         "footer footer footer footer";
-    }
-
-    #powermobil {
-        visibility: hidden;
-        display: none;
-    }
-
-    #powertablet {
-        visibility: hidden;
-        display: none;
-    }
-
-    #powerdesktop {
-        grid-area: power;
-        visibility: visible;
-        display: block;
-        background-color: #deb546;
-        margin-left: 2em; margin-right: 2em; margin-bottom: 2em; 
-        text-align: center;
     }
 
 }
